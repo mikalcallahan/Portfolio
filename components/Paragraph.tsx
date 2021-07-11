@@ -6,8 +6,8 @@ interface ParagraphProps {
 }
 export function Paragraph(props: ParagraphProps) {
   return (
-    <h1 className={styles.title}>
+    <h5 className={styles.title}>
       {props.text}
-    </h1>
+    </h5>
   )
 }

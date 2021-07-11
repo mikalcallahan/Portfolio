@@ -1,13 +1,13 @@
 import { NavigationLink } from '../models/NavLinks'
 
-interface NavigationListProps {
+interface NavigationListItemProps {
   links: NavigationLink[]
 }
 
-export function NavigationList(props: NavigationListProps) {
+export function NavigationListItem(props: NavigationListItemProps) {
   const links = props.links
   const linksList = links.map((link) => (
-    <li key={link.toString()}>
+    <li key={link._id}>
       {' '}
       <a href={link.uri}> {link.name} </a>
     </li>

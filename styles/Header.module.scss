@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.listContainer {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+
+  ul {
+    display: flex;
+
+    li {
+      padding: 5%;
+
+    }
+  }
+}

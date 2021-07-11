@@ -1,30 +1,42 @@
-import { Paragraph } from '../components/Paragraph'
-import { NavigationList } from '../components/NavigationList'
+import { NavigationListItem } from '../components/NavigationList'
 import styles from '../styles/Home.module.scss'
 import { NavigationLink } from '../models/NavLinks'
-import * as Link from 'next/link'
+import { Header } from './Header'
 
 export default function Portfolio() {
   const links: NavigationLink[] = [
     {
+      _id: '1',
       name: 'Vish',
       uri: 'https://getvish.com',
     },
     {
+      _id: '2',
       name: 'Mindfulstreaming',
       uri: 'https://github.com/mikalcallahan/mindfulstreaming',
     },
     {
+      _id: '3',
       name: 'VueBoilerplate',
       uri: 'https://github.com/mikalcallahan/vuejs-boilerplate',
     },
-    { name: 'Sinnoise', uri: 'https://github.com/mikalcallahan/sinnoise' },
     {
+      _id: '4',
+      name: 'Sinnoise',
+      uri: 'https://github.com/mikalcallahan/sinnoise',
+    },
+    {
+      _id: '5',
       name: 'Metamorphosis',
       uri: 'https://github.com/mikalcallahan/metamorphosis',
     },
-    { name: 'Minuteur', uri: 'https://www.npmjs.com/package/minuteur' },
     {
+      _id: '6',
+      name: 'Minuteur',
+      uri: 'https://www.npmjs.com/package/minuteur',
+    },
+    {
+      _id: '7',
       name: 'Threejs Cube',
       uri: 'https://github.com/mikalcallahan/three-js-cube',
     },
@@ -32,26 +44,12 @@ export default function Portfolio() {
 
   return (
     <div className='container'>
-      <header>
-        <h3> Mikal Callahan </h3>
-        <ul>
-          <li>
-            <Link.default href='/about'>
-              <a>About</a>
-            </Link.default>
-          </li>
-          <li>
-            <Link.default href='/portfolio'>
-              <a>Portfolio</a>
-            </Link.default>
-          </li>
-        </ul>
-      </header>
+      <Header></Header>
       <main className='main'>
         {/*<Paragraph text={paragraph}></Paragraph>*/}
 
         <div className={styles.grid}>
-          <NavigationList links={links}></NavigationList>
+          <NavigationListItem links={links}></NavigationListItem>
         </div>
       </main>
     </div>
