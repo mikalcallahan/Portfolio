@@ -1,7 +1,8 @@
 import { NavigationListItem } from '../components/NavigationList'
 import styles from '../styles/Home.module.scss'
 import { NavigationLink } from '../models/NavLinks'
-import { Header } from './Header'
+import { Header } from '../components/Header'
+import { Footer } from '../components/Footer'
 
 export default function Portfolio() {
   const links: NavigationLink[] = [
@@ -43,15 +44,18 @@ export default function Portfolio() {
   ]
 
   return (
-    <div className='container'>
-      <Header></Header>
-      <main className='main'>
-        {/*<Paragraph text={paragraph}></Paragraph>*/}
+    <div className='page-content'>
+      <div className='container'>
+        <Header/>
+        <main className='main'>
+          {/*<Paragraph text={paragraph}></Paragraph>*/}
 
-        <div className={styles.grid}>
-          <NavigationListItem links={links}></NavigationListItem>
-        </div>
-      </main>
+          <div className={styles.grid}>
+            <NavigationListItem links={links} />
+          </div>
+        </main>
+        <Footer />
+      </div>
     </div>
   )
 }

@@ -1,4 +1,5 @@
-import { Header } from './Header'
+import { Header } from '../components/Header'
+import { Footer } from '../components/Footer'
 import { Paragraph } from '../components/Paragraph'
 import { NavigationListItem } from '../components/NavigationList'
 import styles from '../styles/Home.module.scss'
@@ -32,6 +33,7 @@ export default function About() {
           <NavigationListItem links={links}></NavigationListItem>
         </div>
       </main>
+      <Footer />
     </div>
   )
 }
