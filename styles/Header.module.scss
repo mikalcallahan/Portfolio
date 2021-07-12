@@ -18,3 +18,21 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .listContainer {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    ul {
+      justify-content: center;
+    }
+  }
+}
