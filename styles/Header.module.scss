@@ -11,12 +11,14 @@
 
   ul {
     display: flex;
-
-    li {
-      padding: 5%;
-
-    }
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
+}
+
+.navLink {
+  padding: 2.5% 10%;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -33,6 +35,10 @@
 
     ul {
       justify-content: center;
+    }
+
+    li {
+      padding: 2.5% 0;
     }
   }
 }

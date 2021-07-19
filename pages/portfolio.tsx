@@ -50,7 +50,7 @@ export default function Portfolio() {
         <main className='main'>
           {/*<Paragraph text={paragraph}></Paragraph>*/}
 
-          <div className={styles.grid}>
+          <div> 
             <NavigationListItem links={links} />
           </div>
         </main>

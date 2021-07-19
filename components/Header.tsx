@@ -8,12 +8,12 @@ export const Header = () => {
       <h3> Mikal Callahan </h3>
       <div className={styles.listContainer}>
         <ul>
-          <li key={1}>
+          <li className={styles.navLink} key={1}>
             <Link.default href='/about'>
               <a>About</a>
             </Link.default>
           </li>
-          <li key={2}>
+          <li className={styles.navLink} key={2}>
             <Link.default href='/portfolio'>
               <a>Portfolio</a>
             </Link.default>
